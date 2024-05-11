@@ -51,7 +51,7 @@
                                     </span>
                                     <input type="tel" class="form-control" id="phone" name="phone" value="">
                                 </div>
-                                <label id="phone-error" class="text-danger" style="display: none;">El número de teléfono solo debe contener dígitos numéricos.</label>
+                                <label id="phone-error" class="text-danger" style="display: none;">El número de teléfono solo debe contener dígitos numéricos y no más de 8 dígitos.</label>
                             </div>
                             <div class="col-12">
                                 <label for="password" class="form-label">Contraseña <span class="text-danger">*</span></label>
@@ -61,6 +61,7 @@
                                 <label for="confirm_password" class="form-label">Confirmar Contraseña <span class="text-danger">*</span></label>
                                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
                                 <label id="password-error" class="text-danger" style="display: none;">Las contraseñas no coinciden</label>
+                                <label id="password-error-two" class="text-danger" style="display: none;">La contraseña debe tener al menos 8 caracteres y contener al menos una letra mayúscula.</label>
                             </div>
                             <div class="col-12">
                                 <div class="d-grid">
@@ -110,7 +111,7 @@
           Registrado correctamente
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary boton" data-bs-dismiss="modal">Aceptar</button>
+          <a href="#"><button type="button" class="btn btn-primary boton" data-bs-dismiss="modal">Aceptar</button></a>
         </div>
       </div>
     </div>
