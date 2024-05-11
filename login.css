@@ -1,0 +1,13 @@
+/* BOTONES */
+
+.boton{
+    background-color: rgb(152, 104, 197);
+    border-color: rgb(152, 104, 197);
+}
+
+.boton:hover{
+    background-color: rgb(99, 63, 133);
+    border-color: rgb(99, 63, 133);
+    transition: .3s;
+    
+}

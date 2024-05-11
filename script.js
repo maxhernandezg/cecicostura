@@ -6,6 +6,7 @@ function validarFormulario(event) {
     if (!numeros.test(valorTelefono)) {
         $('#phone-error').css('display', 'block');
         event.preventDefault();
+        return;
     } else {
         $('#phone-error').css('display', 'none');
     }
@@ -16,9 +17,13 @@ function validarFormulario(event) {
     if (contraseña !== confirmarContraseña) {
         $('#password-error').css('display', 'block');
         event.preventDefault();
+        return;
     } else {
         $('#password-error').css('display', 'none');
     }
+
+    $('#exitoModal').modal('show');
+    event.preventDefault();
 }
 
 $(document).ready(function() {
