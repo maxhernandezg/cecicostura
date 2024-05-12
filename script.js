@@ -1,5 +1,6 @@
 function validarFormulario(event) {
     // Validar teléfono
+    console.log("Validando formulario");
     var telefono = $('#phone'); 
     var valorTelefono = telefono.val();
     var numeros = /^[0-9]+$/;
@@ -38,5 +39,6 @@ function validarFormulario(event) {
 }
 
 $(document).ready(function() {
+    console.log("Documento listo");
     $('#form').submit(validarFormulario);
 });
