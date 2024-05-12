@@ -72,7 +72,7 @@ h1 {
     }
 }
 
-/* Underline Effect*/
+/* Navbar*/
 .nav-item {
     position: relative;
     
@@ -114,6 +114,7 @@ h1 {
     border: 0px;
   }
 
+  /* Footer*/
   footer {
     background-color: var(--secondary);
     color: #fff;
