@@ -75,6 +75,7 @@ h1 {
 /* Underline Effect*/
 .nav-item {
     position: relative;
+    
   }
   
   .navbar-collapse ul li a.nav-link:before {
