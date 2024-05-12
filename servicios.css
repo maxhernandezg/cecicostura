@@ -1,8 +1,8 @@
 
 :root{
-    --light: #E2E2E2;
-    --primary: rgb(9, 9, 71);
-    --secondary: rgb(70, 70, 55);
+    --light: #E2E2E2; 
+    --primary:#f3c0e2;
+    --secondary: #b15d95;
 }
 *, *::after, *::before {
     padding: 0;
@@ -14,7 +14,7 @@ img{
     display: block;
 }
 h1 {
-    color: var(--secondary);
+    color: var(--primary);
     text-align: center;
     text-transform: uppercase;
 }
@@ -48,7 +48,7 @@ h1 {
 }
 .btn{
     display: block;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     padding: 5px;
     text-decoration: none;
     color: #fff;
@@ -101,7 +101,7 @@ h1 {
       -webkit-transform: translateY(0px);
       transform: translateY(0px);
       bottom: 0px;
-      background: #f3c0e2;
+      background:var(--secondary);
   }
   
   .dropdown-item:hover, .dropdown-item:focus {
