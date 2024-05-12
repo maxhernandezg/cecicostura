@@ -101,7 +101,7 @@ h1 {
       -webkit-transform: translateY(0px);
       transform: translateY(0px);
       bottom: 0px;
-      background:var(--secondary);
+      background:var(--primary);
   }
   
   .dropdown-item:hover, .dropdown-item:focus {
