@@ -1,86 +1,129 @@
-.carousel .carousel-inner .carousel-item img{
-  height: 700px;
+.carousel .carousel-inner .carousel-item img {
+  height: auto;
+  max-height: 95vh;
+  max-width: 100%;
 }
 
+/*parallax scrolling
+*/
+
+
+/*SECCION NUESTRA MISION - ARREGLO DE ROPA*/
 .section-container {
-    display: flex;
-    align-items: center;
+  background-color: #fff4fb;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  }
+.text-container, .image-container {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
 
-  .text-container {
-    flex: 1;
-    
-  }
+.texto-start {
+  text-align: left;
+}
 
-  .image-container {
-    flex: 1;
+.texto-end {
+  text-align: right;
+}
 
-    top: 0;
-    height: 50vh;
-    overflow: hidden;
-  }
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
 
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
+/*CARDS*/
+.container {
+  width: 100%;
+  display: flex;
+  /*para que las tarjetas se ajusten a nuevas filas cuando el espacio horizontal sea insuficiente*/
+  flex-wrap: wrap;
+  justify-content: center;
   /**/
-  .section-container{
-    background-color: #fff4fb;
-  }
+  max-width: 1300px;
 
-  /*CARDS*/
-  .container{
-    width: 100%;
-    display: flex;
-    max-width: 1300px;
-    
-  }
-  .card{
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .card:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
-    transform: translateY(-3%);
-  }
+}
 
-  .card img{
-    width: 100%;
-    height: 210px;
-  }
-  .card .contenido{
-    padding: 15px;
-    text-align: center;
-  }
-  .card .contenido p{
-    line-height:  1.5;
-  }
-  .card .contenido h3{
-    margin-bottom: 15px;
-  }
+.card {
+  width: calc(33.333% - 40px);
+  /* 3 cards por fila con space between */
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
 
-  .card .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #f3c0e2;
-    border: 1px solid #f3c0e2;
-    border-radius: 4px;
-    transition: all 400ms ease;
-  }
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3%);
+}
 
-  .card .contenido a:hover{
-    background: #f3c0e2;
-    color: #fff;
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido p {
+  line-height: 1.5;
+}
+
+.card .contenido h3 {
+  margin-bottom: 15px;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: #f3c0e2;
+  border: 1px solid #f3c0e2;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+
+.card .contenido a:hover { 
+  background: #f3c0e2;
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* ----------------------- CARDS ----------------------- */
+
+/*En pantallas medianas (hasta 1024px), se muestran 2 tarjetas por fila*/
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 40px);
+    /* 2 cards por fila */
   }
+}
+/*En pantallas pequeñas (hasta 768px), se muestra 1 tarjeta por fila */
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 40px);
+    /* 1 card por fila */
+  }
+}
+
+/* ----------------------- CARDS ----------------------- */
+
+@media (max-width: 1024px) {
+  .text-container, .image-container {
+      text-align: center;
+      flex: 1 1 100%;
+      padding: 10px;
+  }
+}
