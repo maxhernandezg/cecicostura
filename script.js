@@ -42,3 +42,12 @@ $(document).ready(function() {
     console.log("Documento listo");
     $('#form').submit(validarFormulario);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  });
