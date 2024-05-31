@@ -23,14 +23,6 @@ header {
   align-items: center;
 }
 
-.logo-container {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.logo-container img {
-  height: 70px;
-}
 
 .navbar {
   display: flex;

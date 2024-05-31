@@ -13,31 +13,46 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Ceci Costura</title>
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo-container">
-          <img src="Fotos Index/logo.jpeg" alt="Cecicostura Logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-lg-block" style="width: 100px;">
+                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-md-block d-lg-none" style="width: 120px;">
+                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-sm-block d-md-none" style="width: 150px;">
+                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-block d-sm-none" style="width: 180px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="login.html">Iniciar Sesión</a></li>
-          <li><a href="Servicios.html">Servicios</a></li>
-          <li><a href="formulario.html">Contacto</a></li>
-          <li><a href="#">Preguntas Frecuentes</a></li>
-        </ul>
-        
-        <div class="search-cart">
-          <img src="Fotos Index/buscar.png" alt="Buscar">
-          <img src="Fotos Index/carrito-de-compras.png" alt="Carrito">
-        </div>
-        <div class="menu-toggle">
-            <img src="Fotos Index/menu.png" alt="Menú">
-        </div>
-      </nav>
+    </nav>
     <main>
         <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
             <div class="carousel-inner">
