@@ -8,47 +8,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg" style="background-color:#b15d95 ;">
-        <a class="navbar-brand" style="color: white;" href="#">Ceci Costuras</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto"> <!-- Cambio: ml-auto en lugar de mr-auto -->
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Iniciar Sesión</a>
-            </li>
-            <li class="nav-item">
-            <li class="nav-item">
-                <a class="nav-link" href="Servicios.html">Servicios</a>
-            </li>
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Preguntas Frecuentes</a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-container">
-          <input type="text" placeholder="Buscar...">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </div>
-      </nav>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="Fotos Index/logo.jpeg" alt="Cecicostura Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar Sesión</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="formulario.html">Contacto</a></li>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+      </ul>
+      
+      <div class="search-cart">
+        <img src="Fotos Index/buscar.png" alt="Buscar">
+        <img src="Fotos Index/carrito-de-compras.png" alt="Carrito">
+      </div>
+      <div class="menu-toggle">
+          <img src="Fotos Index/menu.png" alt="Menú">
+      </div>
+    </nav>
     
 
   <section class="bg-light py-3 py-md-5">
@@ -158,11 +144,32 @@
   </div>
 
   <footer>
-    <div class="iconos">
-      <a href=""><i class="ri-whatsapp-line"></i></a>
-      <a href=""><i class="ri-instagram-line"></i></a>
+    <div class="container">
+      <div class="row">
+        <div class="col order-last" >
+          <div class="iconos">
+            <h6>Nuestras redes: </h6>
+            <a href="https://web.whatsapp.com/send?phone=56987795611" target="_blank"><i class="ri-whatsapp-line"></i></a>
+            <a href=""><i class="ri-instagram-line"></i></a>
+            <a href=""><i class="ri-tiktok-line"></i></a>
+            <a href=""><i class="ri-facebook-line"></i></a>
+    
+          </div>
+        </div>
+        <div class="col" style="margin-left: 160px;">
+            <h6>Nuestros Horarios:</h6>
+            <p>Lunes a Viernes:</p>
+            <p>10:00 AM - 20:00 PM</p>
+            <p>Sábados:</p>
+            <p >10:00 AM - 14:00 PM</p> 
+        </div>
+        <div class="col order-first" >
+              <img class="img-footer" src="Fotos Servicios/logotipo-_-color-01-1-copia-2.png" alt="" style="width: 196px; height: 70px;">
+        </div>
+      </div>
     </div>
-    <p>&copy; Hecho por Joaquín Ferrada, Maximiliano Hernández y Javier Silva</p>
+     
+    <p style="text-align: center;">&copy; Hecho con 💜 por Joaquín Ferrada, Maximiliano Hernández. </p>
   </footer>
       
       

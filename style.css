@@ -8,9 +8,12 @@ body {
 }
 
 :root{
-  --light: #E2E2E2; 
-  --primary:#f3c0e2;
-  --secondary: #b15d95;
+  --negro: #0D0D0D; 
+  --blanco:#F2F2F2;
+  --primary: #F2B3D6;
+  --secondary: #F2C9E0;
+  --oscuro: #260115;
+  --footer: #b15d95;
 }
 
 /*--------------------------- NAVBAR ---------------------------*/
@@ -110,7 +113,7 @@ header {
 /*--------------------------- FOOTER ---------------------------*/
 
 footer {
-  background-color: var(--secondary);
+  background-color: var(--footer);
   color: #fff;
   padding: 10px 0;
   margin-top: auto;
@@ -291,7 +294,19 @@ footer a {
   background: #f3c0e2;
   color: #fff;
 }
+/*--------------------------- LOGIN ---------------------------*/
 
+.boton{
+  background-color:var(--primary);
+  border-color:var(--primary);
+}
+
+.boton:hover{
+  background-color:var(--secondary);
+  border-color:var(--secondary);
+  transition: .3s;
+  
+}
 /* Media Queries */
 
 /* ----------------------- CARDS ----------------------- */
