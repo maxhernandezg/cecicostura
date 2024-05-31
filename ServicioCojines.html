@@ -5,104 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="servicios.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg" style="background-color:#b15d95 ;">
-      <a class="navbar-brand" style="color: white;" href="#">Ceci Costuras</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto"> <!-- Cambio: ml-auto en lugar de mr-auto -->
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre Mí</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="login.html">Iniciar Sesión</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="Servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="formulario.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Preguntas Frecuentes</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-
-      <!--Servicio-->
-
-      <main class="container">
-        <div class="row">
-            <div class="col-12">
-                <br><h1 style="color: black;">Fundas para Cojines</h1>   
-            </div>
+    <nav class="navbar">
+        <div class="logo-container">
+          <img src="Fotos Index/logo.jpeg" alt="Cecicostura Logo">
         </div>
-
-        <br><div class="row">
-            <div class="col-6">
-                <img src="Fotos Servicios/Funda Cojines.jpg" alt=""
-                    class="rounded img-fluid">
-            </div>
-            <div class="col-2">
-                <div>
-                    <h4>Precio</h4>
-                    <h2>$xx.xxx</h2>
-                    <br>
-                    <div class="d-flex mb-3">
-                        <button class="btn btn-primary mb-3 flex-fill">Comprar</button>
-                    </div>
-                    <div class="d-flex mb-3">
-                        <button class="btn btn-outline-primary mb-3 flex-fill">Agendar</button>
-                    </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+          <li><a href="Servicios.html">Servicios</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
         
+        <div class="search-cart">
+          <img src="Fotos Index/buscar.png" alt="Buscar">
+          <img src="Fotos Index/carrito-de-compras.png" alt="Carrito">
+        </div>
+        <div class="menu-toggle">
+            <img src="Fotos Index/menu.png" alt="Menú">
+        </div>
+      </nav>
+      <div class="container-servicio">
+        <div class="breadcrumbs">
+            <a href="index.html">Inicio</a> / <a href="Servicios.html">Productos</a>/ <span>TITULO_PRODUCTO</span>
+        </div>
+        <div class="product">
+            <div class="product-images">
+                <img src="Fotos Servicios/Funda Cojines.jpg" alt="Totebag Upcycled" class="main-image">
+                <div class="thumbnail-images">
+                    <img src="Fotos Servicios/Cosmetiquero.jpg" alt="Thumbnail 1">
+                    <img src="Fotos Servicios/Funda Cojines.jpg" alt="Thumbnail 2">
+                    <img src="Fotos Servicios/Cosmetiquero.jpg"" alt="Thumbnail 3">
+                    <img src="Fotos Servicios/Funda Cojines.jpg" alt="Thumbnail 4">
                 </div>
             </div>
-        <!--Información del Servicio-->
-        <div class="container">
-          <div class="container pb-5" style = "justify-content:end;">
-            <br><section>
-                <h2>¡Personaliza tus Fundas!</h2>
-                <p>En nuestro servicio de fundas para cojines, te ofrecemos la oportunidad de crear fundas totalmente personalizadas que se adapten perfectamente a tu estilo y espacio. ¿Cómo funciona?</p>
-            </section>
-            <section>
-                <h3>Paso 1: Selecciona tu Diseño</h3>
-                <p>Explora nuestra amplia variedad de diseños, desde patrones clásicos hasta estilos modernos y audaces. Una vez que encuentres el diseño que amas, ¡es hora de pasar al siguiente paso!</p>
-            </section>
-            <section>
-                <h3>Paso 2: Elige tu Tela</h3>
-                <p>Selecciona entre nuestra selección de telas de alta calidad. ¿Prefieres algo suave y acogedor como el terciopelo o algo más fresco y ligero como el lino? La elección es tuya.</p>
-            </section>
-            <section>
-                <h3>Paso 3: Indica las Medidas</h3>
-                <p>Cada cojín es único, por lo que necesitamos las medidas precisas para garantizar un ajuste perfecto. Proporciona las dimensiones de tus cojines y nosotros nos encargaremos del resto.</p>
-            </section>
-            <section>
-                <h3>Paso 4: ¡Disfruta de tus Fundas Personalizadas!</h3>
-                <p>Una vez que hayas completado estos pasos, nosotros nos pondremos manos a la obra para crear tus fundas personalizadas con el más alto nivel de artesanía. Pronto estarás disfrutando de cojines que no solo son hermosos, sino también únicos y hechos especialmente para ti.</p>
-            </section>
+            <div class="product-details">
+                <h1>NOMBRE_SERVICIO</h1>
+                <p class="price">
+                    <span class="original-price">$37.000</span> <span class="discounted-price">$30.000</span>
+                </p>
+                <div class="reference">
+                    <p>Referencia Imagen:</p>
+                </div>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, accusantium.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quos quo nam cupiditate harum minima.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit provident reprehenderit ratione laudantium perspiciatis voluptate?</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="usage">
+                    <p><strong>Uso:</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="specifications">
+                    <p><strong>Especificaciones:</strong></p>
+                    <p>Color: Multicolor</p>
+                    <p>Peso: 355 gramos app.</p>
+                    <p>Medidas: 38x33x4 cm.</p>
+                </div>
+                <button class="add-to-cart">Añadir al carrito</button>
+                <p class="sku">SKU: FNBKUPCY001-1-1-1</p>
+            </div>
         </div>
-        </div>
+    </div>
+      
         <footer>
-          <div class="iconos">
-              <a href=""><i class="ri-whatsapp-line"></i></a>
-              <a href=""><i class="ri-instagram-line"></i></a>
-          </div>
-          <p>&copy; Hecho por Joaquín Ferrada, Maximiliano Hernández y Javier Silva</p>
-      </footer>      
-        
+            <div class="container">
+              <div class="row">
+                <div class="col order-last" >
+                  <div class="iconos">
+                    <h6>Nuestras redes: </h6>
+                    <a href="https://web.whatsapp.com/send?phone=56987795611" target="_blank"><i class="ri-whatsapp-line"></i></a>
+                    <a href=""><i class="ri-instagram-line"></i></a>
+                    <a href=""><i class="ri-tiktok-line"></i></a>
+                    <a href=""><i class="ri-facebook-line"></i></a>
+            
+                  </div>
+                </div>
+                <div class="col" style="margin-left: 160px;">
+                    <h6>Nuestros Horarios:</h6>
+                    <p>Lunes a Viernes:</p>
+                    <p>10:00 AM - 20:00 PM</p>
+                    <p>Sábados:</p>
+                    <p >10:00 AM - 14:00 PM</p> 
+                </div>
+                <div class="col order-first" >
+                      <img class="img-footer" src="Fotos Servicios/logotipo-_-color-01-1-copia-2.png" alt="" style="width: 196px; height: 70px;">
+                </div>
+              </div>
+            </div>
+             
+            <p style="text-align: center;">&copy; Hecho con 💜 por Joaquín Ferrada, Maximiliano Hernández. </p>
+          </footer>
 </body>
 </html>
