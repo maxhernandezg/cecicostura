@@ -21,6 +21,7 @@ body {
 .navbar-brand img{
   height: 70px;
   width: auto;
+  justify-content: center;
 }
 .nav-link:hover{
   color: var(--primary);
@@ -30,10 +31,21 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .carrito-login{
   font-size: 30px;
+}
+
+.btn-rosado{
+  color: black;
+  border-color: black;
+}
+
+.btn-rosado:hover {
+  background-color: var(--primary); /* Un tono de rosado más oscuro para el hover */
+  border-color: var(--secondary); /* Cambia el color del borde en el hover */
 }
 
 /*--------------------------- FOOTER ---------------------------*/
