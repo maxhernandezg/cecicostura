@@ -9,45 +9,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
     <title>Ceci Costura</title>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-lg-block" style="width: 100px;">
-                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-md-block d-lg-none" style="width: 120px;">
-                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-none d-sm-block d-md-none" style="width: 150px;">
-                <img src="Fotos Index/logo_idea_1.png" alt="Cecicostura Logo" class="img-fluid d-block d-sm-none" style="width: 180px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler order-2 order-md-1" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-left">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link " aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                        <a class="nav-link" href="#">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand order-1 order-md-3" href="#"><img src="Fotos Index/logo_idea_1.png" alt="Logo"></a>
+            <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-right">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="" alt=""><i class="bi bi-person-circle carrito-login"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formulario.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                        <a class="nav-link" href="#"><i class="bi bi-cart4 carrito-login"></i></a>
                     </li>
                 </ul>
             </div>
@@ -84,17 +83,20 @@
             <div class="service">
                 <img src="Fotos Index/la-maquina-de-coser.png" alt="Uso Doméstico / Profesional">
                 <h3>NOS IMPORTA TU ROPA</h3>
-                <p>Garantizamos el cuidado y atención que tus prendas merecen. Nos dedicamos a mantenerlas en su mejor estado y adaptarlas a ti.</p>
+                <p>Garantizamos el cuidado y atención que tus prendas merecen. Nos dedicamos a mantenerlas en su mejor
+                    estado y adaptarlas a ti.</p>
             </div>
             <div class="service">
                 <img src="Fotos Index/corazon.png" alt="Trabaja con Nosotros">
                 <h3>HECHO CON AMOR</h3>
-                <p>Cada puntada y cada prenda están hechas con dedicación y pasión por la costura, asegurando calidad en cada producto.</p>
+                <p>Cada puntada y cada prenda están hechas con dedicación y pasión por la costura, asegurando calidad en
+                    cada producto.</p>
             </div>
             <div class="service">
                 <img src="Fotos Index/servicio-al-cliente.png" alt="Puntos de Ventas">
                 <h3>COORDINACION DE VENTA</h3>
-                <p>Contacta conmigo para coordinar tu consulta y recibir asesoramiento personalizado sobre nuestros servicios.</p>
+                <p>Contacta conmigo para coordinar tu consulta y recibir asesoramiento personalizado sobre nuestros
+                    servicios.</p>
             </div>
         </section>
         <!--
@@ -133,26 +135,27 @@
             </div>
         </section>
         -->
-   
+
         <section class="section-container">
             <div class="text-container texto-start ">
                 <h2>Mi historia</h2>
                 <br>
-                <p>"Empecé aproximadamente hace 5 años en mi hogar, arreglando mi ropa, la de mis hijas y familiares más cercanos.</p>
-                <p>Es así como se comenzó a correr la voz y algunos vecinos comenzaron a mandarme trabajos de bastas, arreglo de pantalones, vestidos, cambios de cierres en fin. </p>
-                <p>También últimamente me he  dedicado a la fabricación de fundas de cojines, cosmetiqueros, sábanas, bolsos y delantales de jeans.</p>
+                <p>"Empecé aproximadamente hace 5 años en mi hogar, arreglando mi ropa, la de mis hijas y familiares más
+                    cercanos.</p>
+                <p>Es así como se comenzó a correr la voz y algunos vecinos comenzaron a mandarme trabajos de bastas,
+                    arreglo de pantalones, vestidos, cambios de cierres en fin. </p>
+                <p>También últimamente me he dedicado a la fabricación de fundas de cojines, cosmetiqueros, sábanas,
+                    bolsos y delantales de jeans.</p>
                 <p> En Ceci Costura, no solo cosemos prendas, tejemos historias de estilo que
                     perduran en el tiempo."</p>
             </div>
             <div class="image-container">
-                <img src="Fotos Index/WhatsApp Image 2024-05-30 at 11.12.53.jpeg"
-                    alt="Imagen de ejemplo">
+                <img src="Fotos Index/WhatsApp Image 2024-05-30 at 11.12.53.jpeg" alt="Imagen de ejemplo">
             </div>
         </section>
         <section class="section-container">
             <div class="image-container">
-                <img src="Fotos Index/Puños Poleron.jpg"
-                    alt="Imagen de ejemplo">
+                <img src="Fotos Index/Puños Poleron.jpg" alt="Imagen de ejemplo">
             </div>
             <div class="text-container texto-end ">
                 <h2>Arreglo de ropa</h2>
@@ -170,36 +173,38 @@
             </div>
         </section>
     </main>
-     <!--Footer-->
-     
-     <footer>
+    <!--Footer-->
+
+    <footer>
         <div class="container">
-          <div class="row">
-            <div class="col order-last" >
-              <div class="iconos">
-                <h6>Nuestras redes: </h6>
-                <a href="https://web.whatsapp.com/send?phone=56987795611" target="_blank"><i class="ri-whatsapp-line"></i></a>
-                <a href=""><i class="ri-instagram-line"></i></a>
-                <a href=""><i class="ri-tiktok-line"></i></a>
-                <a href=""><i class="ri-facebook-line"></i></a>
-        
-              </div>
+            <div class="row">
+                <div class="col order-last">
+                    <div class="iconos">
+                        <h6>Nuestras redes: </h6>
+                        <a href="https://web.whatsapp.com/send?phone=56987795611" target="_blank"><i
+                                class="ri-whatsapp-line"></i></a>
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                        <a href=""><i class="ri-tiktok-line"></i></a>
+                        <a href=""><i class="ri-facebook-line"></i></a>
+
+                    </div>
+                </div>
+                <div class="col" style="margin-left: 160px;">
+                    <h6>Nuestros Horarios:</h6>
+                    <p>Lunes a Viernes:</p>
+                    <p>10:00 AM - 20:00 PM</p>
+                    <p>Sábados:</p>
+                    <p>10:00 AM - 14:00 PM</p>
+                </div>
+                <div class="col order-first">
+                    <img class="img-footer" src="Fotos Servicios/logotipo-_-color-01-1-copia-2.png" alt=""
+                        style="width: 196px; height: 70px;">
+                </div>
             </div>
-            <div class="col" style="margin-left: 160px;">
-                <h6>Nuestros Horarios:</h6>
-                <p>Lunes a Viernes:</p>
-                <p>10:00 AM - 20:00 PM</p>
-                <p>Sábados:</p>
-                <p >10:00 AM - 14:00 PM</p> 
-            </div>
-            <div class="col order-first" >
-                  <img class="img-footer" src="Fotos Servicios/logotipo-_-color-01-1-copia-2.png" alt="" style="width: 196px; height: 70px;">
-            </div>
-          </div>
         </div>
-         
+
         <p style="text-align: center;">&copy; Hecho con 💜 por Joaquín Ferrada, Maximiliano Hernández. </p>
-      </footer>
+    </footer>
     <script src="script.js"></script>
 </body>
 

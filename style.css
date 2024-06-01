@@ -17,90 +17,24 @@ body {
 }
 
 /*--------------------------- NAVBAR ---------------------------*/
-header {
+
+.navbar-brand img{
+  height: 70px;
+  width: auto;
+}
+.nav-link:hover{
+  color: var(--primary);
+}
+
+.navbar-nav {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.carrito-login{
+  font-size: 30px;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.nav-links a:hover {
-  color: #F2B3D6; /* Color rosa */
-}
-
-.search-cart img {
-  height: 24px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.menu-toggle {
-  display: none;
-}
-
-.menu-toggle img {
-  height: 24px;
-  cursor: pointer;
-}
-
-/* Estilos para el menú desplegable en dispositivos móviles */
-@media only screen and (max-width: 810px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: white;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
 
 /*--------------------------- FOOTER ---------------------------*/
 
