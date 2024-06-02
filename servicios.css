@@ -73,45 +73,34 @@ h1 {
 }
 
 /* Navbar*/
-.nav-item {
-    position: relative;
-    
+.navbar-brand img{
+    height: 70px;
+    width: auto;
+    justify-content: center;
+  }
+  .nav-link:hover{
+    color: var(--primary);
   }
   
-  .navbar-collapse ul li a.nav-link:before {
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: transparent;
-      content: '';
-      opacity: 0;
-      -ms-transition: opacity 0.3s, -webkit-transform 0.3s;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-      transition: opacity 0.3s, transform 0.3s;
-      -ms-transform: translateY(10px);
-      -webkit-transform: translateY(10px);
-      transform: translateY(10px);
+  .navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .navbar-collapse ul li:hover a.nav-link:before {
-      opacity: 1;
-      -ms-transform: translateY(0px);
-      -webkit-transform: translateY(0px);
-      transform: translateY(0px);
-      bottom: 0px;
-      background:var(--primary);
+  .carrito-login{
+    font-size: 30px;
   }
   
-  .dropdown-item:hover, .dropdown-item:focus {
-      color: #ffffff;
-      text-decoration: none;
-      background-color: #dd4343;
+  .btn-rosado{
+    color: black;
+    border-color: black;
   }
   
-  .dropdown-menu {
-    border: 0px;
+  .btn-rosado:hover {
+    background-color: var(--primary); /* Un tono de rosado más oscuro para el hover */
+    border-color: var(--secondary); /* Cambia el color del borde en el hover */
   }
 
   /* Footer*/
