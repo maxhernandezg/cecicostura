@@ -301,7 +301,113 @@ footer a {
 
 }
 
-/* Media Queries */
+  /*--------------------------- SERVICIO DESCRIPCION ---------------------------*/
+
+.container-servicio {
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+  color: var(--footer);
+  text-decoration: none;
+}
+
+.breadcrumbs span {
+  color: #888;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-images {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.thumbnail-images img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  padding: 2px;
+}
+
+.thumbnail-images img:hover {
+  border-color: var(--footer);
+}
+
+.product-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.product-details h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.price {
+  margin: 20px 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: var(--footer);
+  font-size: 20px;
+}
+
+.reference, .description, .usage, .specifications, .material {
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-cart:hover {
+  background-color: var(--footer);
+}
+
+.sku, .category {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
 
 /* ----------------------- CARDS ----------------------- */
 
@@ -316,7 +422,7 @@ footer a {
 /*En pantallas pequeñas (hasta 768px), se muestra 1 tarjeta por fila */
 @media (max-width: 768px) {
   .card {
-    width: calc(100% - 40px);
+    width: calc(60% - 40px);
     /* 1 card por fila */
   }
 }
