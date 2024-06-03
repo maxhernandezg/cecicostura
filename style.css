@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-color: white;
 }
 
 *,
@@ -20,6 +21,7 @@ body {
 }
 
 /*--------------------------- NAVBAR ---------------------------*/
+
 
 
 .responsive-logo {
@@ -166,7 +168,11 @@ footer a {
 
 /*PRIMERA SECCION*/
 
-.service h3:hover {
+.service i{
+  font-size: 60px;
+}
+
+.service h3:hover,  .service i:hover{
   color: #F2B3D6;
 }
 
