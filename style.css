@@ -91,7 +91,9 @@ footer {
 .footer-small {
   font-size: 12px;
   text-align: center;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
@@ -171,11 +173,12 @@ footer a {
 
 /*PRIMERA SECCION*/
 
-.service i{
+.service i {
   font-size: 60px;
 }
 
-.service h3:hover,  .service i:hover{
+.service h3:hover,
+.service i:hover {
   color: #F2B3D6;
 }
 
@@ -304,7 +307,7 @@ footer a {
 
 }
 
-  /*--------------------------- SERVICIO DESCRIPCION ---------------------------*/
+/*--------------------------- SERVICIO DESCRIPCION ---------------------------*/
 
 .container-servicio {
   max-width: 1200px;
@@ -388,7 +391,11 @@ footer a {
   font-size: 20px;
 }
 
-.reference, .description, .usage, .specifications, .material {
+.reference,
+.description,
+.usage,
+.specifications,
+.material {
   margin-bottom: 20px;
 }
 
@@ -405,7 +412,8 @@ footer a {
   background-color: var(--footer);
 }
 
-.sku, .category {
+.sku,
+.category {
   font-size: 14px;
   color: #888;
   margin-top: 10px;
